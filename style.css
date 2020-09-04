@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px;
+  /* background-color: #eee; */
+  height: 70px;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu h3{
+  color: #374e75;
+  font-size: 24px;
+  font-weight: 300;
+}
+.menu h3 span{ 
+  border-left: 1px solid #333;
+  padding-left: 12px;
+  margin-left: 2px;
+}
+.contact h3{
+  font-weight: 300;
+  font-size: 18px;
+
+}
+.logo{
+  align-self: start;
+  background-color: #fff;
+  padding: 20px 0;
+}
+.logo img{
+  /* height: 100px; */
+  width: 150px;
+}
+.contact h3 span{
+  border-left: 1px solid #333;
+  padding-left: 12px;
+  margin-left: 11px;
+}
+
+.content{
+  background-image: url('./banner1.jpg');
+  height: calc(100vh - 70px)
+}
