@@ -32,12 +32,15 @@
 }
 .logo{
   align-self: start;
-  background-color: #fff;
-  padding: 20px 0;
 }
 .logo img{
   /* height: 100px; */
   width: 150px;
+  /* overflow: visible; */
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  padding: 20px 0;
 }
 .contact h3 span{
   border-left: 1px solid #333;
@@ -47,5 +50,65 @@
 
 .content{
   background-image: url('./banner1.jpg');
-  height: calc(100vh - 70px)
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  position: relative;
+}
+.content-wrapper{
+  width: 400px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background-color: #fff;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  font-family: 'Montserrat', sans-serif;
+  width: 23%;
+  /* padding: 20px 30px; */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card__image{
+
+}
+.card__image img{
+  /* height: 300px; */
+  width: 100%;
+}
+.card__content{
+  padding: 10px;
+}
+.card__headline{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.card__subheadline{
+  font-size: 14px;
+  margin-bottom: 10px;
+
+}
+.card__button-wrapper{
+  margin: 10px;
+  display: flex;
+}
+.card__metainfo{
+  font-size: 12px;
+  margin-bottom: 20px;
+
+}
+.card__button{
+  background-color: navy;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 10px;
+  width: 100%;
 }
